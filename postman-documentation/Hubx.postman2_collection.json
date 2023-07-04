@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "380a4abf-8740-4428-9bde-09734014f0ed",
+		"name": "Hubx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17187269"
+	},
+	"item": [
+		{
+			"name": "Book- Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"authorId\": \"649b1c6d1005b7ce406efeee\",\r\n\"title\": \"as\",\r\n\"price\": 5.5,\r\n\"ISBN\": \"SDPSDPOO3223\",\r\n\"language\": \"english\",\r\n\"pages\": 220,\r\n\"publisher\": \"Nurettin Şen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"susss\",\r\n    \"country\": \"germany\",\r\n    \"birthDate\": \"1350/12/01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book - Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/book/649b1ca51005b7ce406efefa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"book",
+						"649b1ca51005b7ce406efefa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n\"title\": \"dıkkkattt\",\r\n\"price\": 2.2,\r\n\"ISBN\": \"SDPSDPOO3223\",\r\n\"language\": \"testttttttt\",\r\n\"pages\": 23,\r\n\"publisher\": \"abcasadsad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/book/649b1ca51005b7ce406efefa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"book",
+						"649b1ca51005b7ce406efefa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
